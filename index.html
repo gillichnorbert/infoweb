@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jegyzetek - 2024/25</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: #444;
+            padding: 10px 0;
+            position: sticky;
+            top: 50px;
+            z-index: 999;
+        }
+        nav a {
+            color: #fff;
+            background: #0066cc;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #004999;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding-top: 50px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+            border-left: 4px solid #333;
+        }
+        code {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jegyzetek - 2024/25</h1>
+    </header>
+    <nav>
+        <a href="#general-info">Általános információ</a>
+        <a href="#swift">Swift fejlesztés</a>
+        <a href="#facebook-login">Facebook autentikáció</a>
+        <a href="#git">Git konfiguráció</a>
+        <a href="#angular">Angular parancsok</a>
+        <a href="#sql">SQL - Lottóstatisztika</a>
+        <a href="#docker">Docker használata</a>
+    </nav>
+    <main>
+        <section id="general-info">
+            <h2>Általános információ</h2>
+            <ul>
+                <li><strong>Projekt weboldal:</strong> <a href="https://tapkieg-f0401.web.app/" target="_blank">Tapkieg Info 2024/25</a></li>
+                <li><strong>Kapcsolat:</strong> Rékási, <a href="mailto:oktatas.rekasi@gmail.com">oktatas.rekasi@gmail.com</a></li>
+                <li><strong>Laravel Mac-en:</strong> Ellenőrizni kell a telepített környezetet és verziókat.</li>
+            </ul>
+        </section>
+        <section id="swift">
+            <h2>Swift fejlesztés</h2>
+            <h3>Hasznos linkek</h3>
+            <ul>
+                <li><a href="https://developer.apple.com/swift/resources/" target="_blank">Swift Resources</a></li>
+                <li><a href="https://www.apple.com/hu/education/higher-education/app-development/" target="_blank">App Development for Higher Education</a></li>
+                <li><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language" target="_blank">Swift Language Guide</a></li>
+                <li><a href="https://developer.apple.com/develop/" target="_blank">Swift Developer Guide</a></li>
+                <li><a href="https://endanke.web.elte.hu/wp-content/uploads/2017/02/iOS_2017_tavasz_1.pdf" target="_blank">iOS fejlesztés (ELTE, 2017)</a></li>
+            </ul>
+        </section>
+        <section id="facebook-login">
+            <h2>Facebook autentikáció és Social Login</h2>
+            <p><strong>Használati esetek:</strong> Social média bejelentkezés szükséges vizsgához.</p>
+            <ul>
+                <li><a href="https://kinsta.com/blog/install-composer/" target="_blank">PHP telepítés (Kinsta)</a></li>
+                <li><a href="https://laravel.com/docs/11.x/installation#creating-a-laravel-project" target="_blank">Laravel telepítés</a></li>
+            </ul>
+        </section>
+        <section id="git">
+            <h2>Git konfiguráció</h2>
+            <pre><code>
+git config --global user.name "Gillich Norbert"
+git config --global user.email "gillich.norbert@icloud.com"
+
+# Beállítások törlése
+git config --global --unset user.name
+git config --global --unset user.email
+            </code></pre>
+        </section>
+        <section id="angular">
+            <h2>Angular parancsok</h2>
+            <h3>Komponens generálás</h3>
+            <pre><code>
+ng g c home
+ng g s config
+            </code></pre>
+            <h3>Firebase telepítése</h3>
+            <pre><code>
+npm install firebase @angular/fire
+            </code></pre>
+        </section>
+        <section id="sql">
+            <h2>SQL - Lottóstatisztika eljárás</h2>
+            <pre><code>
+DELIMITER //
+CREATE PROCEDURE lottostatisztika(IN mennyi INT)
+BEGIN
+    DECLARE i INT DEFAULT 1;
+    DECLARE lsz INT;
+    DECLARE kesz INT DEFAULT 0;
+    -- További SQL kód itt...
+END//
+DELIMITER ;
+            </code></pre>
+        </section>
+        <section id="docker">
+            <h2>Docker használata</h2>
+            <h3>SQL Server telepítése</h3>
+            <pre><code>
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Titok2024" -p 1433:1433 --name mssql -d mcr.microsoft.com/mssql/server
+docker exec -it mssql bash
+            </code></pre>
+        </section>
+    </main>
+</body>
+</html>
